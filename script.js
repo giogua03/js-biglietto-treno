@@ -1,15 +1,15 @@
-const kilometers = parseFloat(prompt("Benvenuto, quanti chilometri devi percorrere?"));
-var price = parseFloat(kilometers * 0.21).toFixed(2);
-console.log("Il prezzo del tuo biglietto è", price, "€");
-const age = parseInt(prompt("Quanti anni hai?"));
-if (age < 18) {
-    var newprice = parseFloat(price * 0.80).toFixed(2);
-    console.log("Essendo under 18 hai diritto ad uno sconto del 20%. Il prezzo del biglietto è", newprice,"€");
+const percorso = parseFloat(prompt("Benvenuto, quanti chilometri devi percorrere?"));
+var costo = parseFloat(percorso * 0.21).toFixed(2);
+console.log("Il prezzo del tuo biglietto è", costo, "€");
+const eta = parseInt(prompt("Quanti anni hai?"));
+if (eta < 18) {
+    var ridotto1 = parseFloat(costo * 80 / 100).toFixed(2);
+    console.log("avendo meno di 18 anni hai diritto ad uno sconto del 20/%. Il prezzo del tuo biglietto è", ridotto1,"€");
 }
-else if (age > 65) {
-    var newprice = (price * 0.60);
-    console.log("Essendo over 65 hai diritto ad uno sconto del 40%. Il prezzo del biglietto è", newprice,"€");
+else if (eta > 65) {
+    var ridotto2 = (costo * 60 / 100);
+    console.log("avendo piu di 60 anni hai diritto ad uno sconto del 60/%. Il prezzo del biglietto è", ridotto2,"€");
 }
 else {
-    console.log("Non è applicato alcuno sconto")
+    console.log("Prezzo intero")
 }
