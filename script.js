@@ -1,5 +1,5 @@
 const percorso = parseFloat(prompt("Benvenuto, quanti chilometri devi percorrere?"));
-var costo = parseFloat(percorso * 0.21).toFixed(2);
+let costo = parseFloat(percorso * 0.21).toFixed(2);
 console.log("Il prezzo del tuo biglietto è", costo, "€");
 const eta = parseInt(prompt("Quanti anni hai?"));
 if (eta < 18) {
